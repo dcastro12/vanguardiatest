@@ -24,7 +24,7 @@ const connectDB = async () => {
 connectDB();
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World! 2')
 })
 
 app.use("/ingredients", ingredientRoutes);

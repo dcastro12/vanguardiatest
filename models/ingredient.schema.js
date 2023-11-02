@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const ingridientSchema = new Schema({
+const ingredientSchema = new Schema({
     sku: {type: String, required: true},
     name: {type: String, required: true},
     quantity: {type: Number, required: true},
@@ -11,4 +11,4 @@ const ingridientSchema = new Schema({
     price: {type: Number, required: true}
 });
 
-export default mongoose.model('Ingridient', ingridientSchema);
+export default mongoose.model('Ingredient', ingredientSchema);

@@ -3,7 +3,7 @@ import Ingredient from "../models/ingredient.schema.js"
 const getIngredient = async (req, res) => {
    try {
       const ingredients = await Ingredient.find({}); 
-    
+      console.log(ingredients);
       res.send(ingredients);
    } catch (error) {
       res.status(500).send({
@@ -42,7 +42,7 @@ const addIngredient = async (req, res) => {
 
 const updateIngredient = async (req, res) => {
    await Ingredient.updateOne({ 
-         _id: req.body._id
+         sku: req.body.sku
       },
       { 
          $set: { 
@@ -66,7 +66,7 @@ const updateIngredient = async (req, res) => {
 
 const deleteIngredient = async (req, res) => {
    await Ingredient.deleteOne({
-      _id: req.body._id   
+      sku: req.body.sku   
    })
       .then(() => {
          res.status(200).send({

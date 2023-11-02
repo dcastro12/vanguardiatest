@@ -15,9 +15,9 @@ const getMenus = async (req, res) => {
 
 const addMenu = async (req, res) => {
    const newMenu = new Menu({
+      sku: req.body.sku,
       name: req.body.name,
       price: req.body.price,
-      SKU: req.body.SKU,
       combo: req.body.combo
    })
    
@@ -39,7 +39,7 @@ const addMenu = async (req, res) => {
 
 const updateMenu = async (req, res) => {
    await Menu.updateOne({ 
-         _id: req.body._id
+         sku: req.body.sku
       },
       { 
          $set: { 
@@ -63,7 +63,7 @@ const updateMenu = async (req, res) => {
 
 const deleteMenu = async (req, res) => {
    await Menu.deleteOne({
-      _id: req.body._id   
+      sku: req.body.sku   
    })
       .then(() => {
          res.status(200).send({

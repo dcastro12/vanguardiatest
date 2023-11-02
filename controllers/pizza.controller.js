@@ -17,7 +17,7 @@ const addPizza = async (req, res) => {
    const newPizza = new Pizza({
       name: req.body.name,
       price: req.body.price,
-      SKU: req.body.SKU,
+      sku: req.body.sku,
       ingredients: req.body.ingredients,
       size: req.body.size
    })
@@ -31,6 +31,7 @@ const addPizza = async (req, res) => {
          })
       })
       .catch(() => {
+         console.error(error);
          res.status(500).send({
             ok: false,
             message: "Server error"
@@ -40,13 +41,13 @@ const addPizza = async (req, res) => {
 
 const updatePizza = async (req, res) => {
    await Pizza.updateOne({ 
-         _id: req.body._id
+         sku: req.body.sku
       },
       { 
          $set: { 
             name: req.body.name,
             price: req.body.price,
-            SKU: req.body.SKU,
+            sku: req.body.sku,
             ingredients: req.body.ingredients,
             size: req.body.size
          } 
@@ -67,7 +68,7 @@ const updatePizza = async (req, res) => {
 
 const deletePizza = async (req, res) => {
    await Pizza.deleteOne({
-      _id: req.body._id   
+      sku: req.body.sku   
    })
       .then(() => {
          res.status(200).send({
