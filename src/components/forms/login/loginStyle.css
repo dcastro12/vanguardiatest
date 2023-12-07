@@ -1,0 +1,54 @@
+/* loginStyle.css */
+.formulario {
+    max-width: 500px;
+    width: 100%; /* Hace que el formulario sea flexible */
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario div {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333; /* Color del texto más oscuro */
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px; /* Tamaño de fuente más grande */
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0088cc; /* Cambio de color del botón */
+    color: white;
+    font-size: 18px; /* Tamaño de fuente más grande */
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #006699; /* Color al pasar el cursor más oscuro */
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        padding: 20px;
+        /* Otros estilos específicos para pantallas pequeñas */
+    }
+}

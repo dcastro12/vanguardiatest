@@ -1,0 +1,67 @@
+/* PizzaForm.css */
+.formulario-pizza {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-pizza div {
+    margin-bottom: 15px;
+}
+
+.formulario-pizza label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario-pizza input[type="text"],
+.formulario-pizza input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-pizza .boton {
+    margin-top: 10px;
+    width: calc(50% - 5px);
+    display: inline-block;
+}
+
+.boton-eliminar {
+    background-color: crimson;
+}
+
+.boton-eliminar:hover{
+    background-color: #ff4444;
+}
+
+.boton-editar {
+    background-color: orange;
+}
+
+.boton-editar:hover{
+    background-color: gold;
+}
+
+.boton-agregar {
+    background-color: darkgreen;
+}
+
+.boton-agregar:hover{
+    background-color: #00C851;
+}
+
+.boton-limpiar {
+    background-color: mediumblue;
+}
+
+.boton-limpiar:hover{
+    background-color: #33b5e5;
+}

@@ -1,0 +1,84 @@
+/* ProductoForm.css */
+.formulario-producto {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-producto div {
+    margin-bottom: 15px;
+}
+
+.formulario-producto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formulario-producto input[type="text"],
+.formulario-producto input[type="number"],
+.formulario-producto input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-producto .boton {
+    margin-top: 10px;
+    width: calc(50% - 5px);
+    display: inline-block;
+}
+
+
+.boton-eliminar {
+    background-color: crimson;
+}
+
+.boton-eliminar:hover{
+    background-color: #ff4444;
+}
+
+.boton-editar {
+    background-color: orange;
+}
+
+.boton-editar:hover{
+    background-color: gold;
+}
+
+.boton-agregar {
+    background-color: darkgreen;
+}
+
+.boton-agregar:hover{
+    background-color: #00C851;
+}
+
+.boton-limpiar {
+    background-color: mediumblue;
+}
+
+.boton-limpiar:hover{
+    background-color: #33b5e5;
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+    .formulario-ingredientes {
+      padding: 15px;
+    }
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 480px) {
+    .formulario-ingredientes {
+      padding: 10px;
+    }
+  }
+  

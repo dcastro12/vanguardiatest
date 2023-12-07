@@ -1,0 +1,42 @@
+/* App.css */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: cadetblue; 
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Estilos para tabletas */
+@media (max-width: 768px) {
+  .formulario-ingredientes {
+    padding: 15px;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+  .formulario-ingredientes {
+    padding: 10px;
+  }
+}
